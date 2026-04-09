@@ -68,7 +68,7 @@ jobs:
     needs: security
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    environment: production
+    environment: Production
     steps:
       - uses: actions/checkout@v4
       
@@ -83,8 +83,8 @@ jobs:
         with:
           push: true
           tags: |
-            kaw393939/601_module9:latest
-            kaw393939/601_module9:${{ github.sha }}
+            ltaravindh392/module11-user-and-calculator:latest
+            ltaravindh392/module11-user-and-calculator:${{ github.sha }}
           platforms: linux/amd64,linux/arm64
-          cache-from: type=registry,ref=kaw393939/601_module9:cache
+          cache-from: type=registry,ref=ltaravindh392/module11-user-and-calculator:cache
           cache-to: type=inline,mode=max

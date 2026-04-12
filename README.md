@@ -420,7 +420,7 @@ docker pull ltaravindh392/module11-user-and-calculator:latest
 # Run (needs a Postgres instance)
 docker run -d \
   -p 8000:8000 \
-  -e DATABASE_URL="postgresql://postgres:postgres@host.docker.internal:5432/userdb" \
+  -e DATABASE_URL="postgresql://postgres:postgres@host.docker.internal:5432/fastapi_db" \
   ltaravindh392/module11-user-and-calculator:latest
  
 open http://localhost:8000
